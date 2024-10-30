@@ -1,51 +1,82 @@
+/* Importando as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Outfit:wght@400;600;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3eae3;
-    color: #333;
-    max-width: 600px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  background-color: hsl(30, 54%, 90%); /* Stone 100 */
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.recipe-container {
+  background-color: hsl(0, 0%, 100%); /* White */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 750px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Young Serif', serif;
+  color: hsl(24, 5%, 18%); /* Stone 900 */
+  margin-top: 0;
+}
+
+h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+ul li, ol li {
+  margin: 5px 0;
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 12px;
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+}
+
+.attribution a {
+  color: hsl(332, 51%, 32%); /* Rose 800 */
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (min-width: 375px) {
+  body {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
   }
-  
-  h1 {
-    font-size: 2em;
-    color: #5a3e2b;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    color: #7b5b46;
-    margin-top: 20px;
-  }
-  
-  ul, ol {
-    margin-left: 20px;
-    line-height: 1.6;
-  }
-  
-  strong {
-    color: #7b5b46;
-  }
-  
-  p {
-    font-size: 1em;
-    line-height: 1.6;
-  }
-  
-  .attribution {
-    font-size: 0.8em;
-    text-align: center;
-    color: #7b5b46;
-    margin-top: 20px;
-  }
-  
-  .attribution a {
-    color: #9c6e58;
-    text-decoration: none;
-  }
-  
-  .attribution a:hover {
-    text-decoration: underline;
-  }
-  
+}
